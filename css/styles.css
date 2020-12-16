@@ -1,0 +1,1218 @@
+body,
+section,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #666;
+    font-family: Lato, 游ゴシック体, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ヘッダー部分ここから */
+header a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    position: fixed;
+    /* overflow: hidden; */
+    z-index: 100;
+}
+
+header a img {
+    width: 100%;
+}
+
+header a:hover {
+    background-color: #9198d6;
+}
+
+/* メイン部分ここから */
+/* キービュアー部分ここから */
+
+.sp {
+    display: none;
+}
+
+.top {
+    position: relative;
+}
+
+.top-image {
+    min-height: 700px;
+    height: 95vh;
+    background-image: url(../images/main_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-title {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 528px;
+    height: 292px;
+}
+
+.top-title img {
+    width: 264px;
+    height: 146px;
+}
+
+.top-text {
+    position: absolute;
+    bottom: 10%;
+    margin-top: 10px;
+    left: 10%;
+    text-align: left;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.top-text img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.scroll {
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 0px;
+    width: 17px;
+    height: 140px;
+    margin: 0 0 0 4%;
+}
+
+.scroll p {
+    transform: rotate(90deg);
+    color: #fff;
+    font-size: 9px;
+    letter-spacing: 0.5ex;
+    position: relative;
+}
+
+.scroll-line {
+    top: auto;
+    bottom: 20px
+}
+
+.scroll-line::before,
+.scroll-line::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: '';
+}
+
+.scroll-line::before {
+    z-index: 10;
+    -webkit-animation: scroll 2.4s infinite normal;
+    animation: scroll 2.4s infinite normal;
+    background: #ffffff;
+}
+
+.scroll-line::after {
+    background: #ffffff;
+    opacity: 0.3;
+}
+
+/* コンセプト部分ここから */
+.concept {
+    margin-top: 130px;
+    padding: 10vh 5% 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 90vh;
+    min-height: 400px;
+    max-height: 550px;
+}
+
+.concept-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    height: 70%;
+    background-image: url(../images/concept_img.jpg);
+    background-size: cover;
+    z-index: -1;
+    transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: scale(1.5);
+    transition-delay: 0.3s;
+    padding-top: 20%;
+}
+
+.concept-text {
+    margin-top: 40px;
+}
+
+.concept-heading {
+    margin-bottom: 45px;
+}
+
+.concept-title {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.concept-title img {
+    width: 100%;
+}
+
+.concept-message {
+    font-size: 0.88rem;
+    line-height: 2.5;
+    margin-top: 30px;
+    color: #595757;
+}
+
+.concept-message span {
+    letter-spacing: -2px;
+}
+
+/* サマリ部分ここから */
+.summary {
+    margin-top: 180px;
+    padding: 120px 0 120px;
+    position: relative;
+    background: #eeeeee;
+}
+
+.summary-content {
+    width: 90%;
+    max-width: 890px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-title {
+    width: 45%;
+    max-width: 367px
+}
+
+.summary-title img {
+    width: 100%;
+}
+
+.summary-text {
+    width: 45%;
+}
+
+.summary-text h2 {
+    font-size: 1.12rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.2ex;
+    line-height: 1.8;
+}
+
+.summary-text p {
+    font-size: 0.88rem;
+    line-height: 2;
+    margin-bottom: 1em
+}
+
+
+/* 染め方部分ここから */
+.dyeing {
+    margin-top: 230px;
+    display: flex;
+}
+
+.photo {
+    width: 60%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.content {
+    width: 40%;
+    padding: 0 10%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #9b9a9a;
+    padding-bottom: 55px;
+    margin-bottom: 45px;
+}
+
+.title h2 {
+    width: 98px;
+}
+
+.title h2 img {
+    width: 100%;
+}
+
+.title-icon {
+    width: 68px;
+}
+
+.title-icon img {
+    width: 100%;
+}
+
+.text h3 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    margin: 0 0 45px;
+    line-height: 2em;
+    letter-spacing: 0.2ex;
+}
+
+.text h3 span {
+    font-size: 0.7rem;
+}
+
+.text p {
+    font-size: 0.9rem;
+    line-height: 2.3em;
+    text-align: justify;
+}
+
+/* 裁縫部分ここから */
+.cutting {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 縫製部分ここから */
+.sewing {
+    margin-top: 100px;
+    display: flex;
+}
+
+/* デザイン部分ここから */
+.design {
+    margin-top: 200px;
+}
+
+.design-container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.design-view {
+    width: 50%;
+    position: relative;
+    background-color: #eee;
+    height: 400px;
+}
+
+.design-view img {
+    width: 100%;
+    position: absolute;
+    top: -10vw;
+    right: 10%;
+}
+
+.design .content {
+    padding: 0 3% 0 0;
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    
+}
+
+.design .title h2 {
+    width: 193px;
+}
+
+.design-images {
+    margin-top: 100px;
+    display: flex;
+}
+
+.design-image1 {
+    width: 30%;
+    max-width: 500px;
+    margin-left: 10%;
+    margin-right: 5%;
+    vertical-align: top;
+}
+
+.design-image2 {
+    width: 30%;
+    max-width: 500px;
+    margin-right: 10%;
+    vertical-align: top;
+}
+
+.design-image1 img,
+.design-image2 img {
+    width: 100%;
+}
+
+.design-images h3 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    margin-top: 50px;
+    line-height: 2;
+    letter-spacing: -1.8px;
+}
+
+.design-images p {
+    font-size: 0.87rem;
+    margin-top: 30px;
+    line-height: 2.3;
+    text-align: justify;
+    letter-spacing: -1.4px;
+}
+
+/* フッター部分ここから */
+footer {
+    margin-top: 200px;
+}
+
+.footer-content {
+    position: relative;
+    background: #eeeeee;
+    text-align: center;
+    padding: 80px 0 120px;
+}
+
+.footer-content h3 {
+    max-width: 148px;
+    margin: 0 auto 50px;
+}
+
+.footer-content h3 img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-content p {
+    max-width: 184px;
+    margin: 0 auto 50px;
+}
+
+.footer-content p img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-content a {
+    display: block;
+    max-width: 385px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.13rem;
+    line-height: 70px;
+    text-decoration: none;
+    position: relative;
+    background-color: #9198d6;
+    transition: color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.footer-content a::before {
+    content: '▼';
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg) scale(0.5);
+}
+
+.footer-content a:hover {
+    background-color: #fff;
+    color: #9198d6;
+}
+
+.copyright {
+    margin-bottom: 100px;
+    padding-top: 90px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #595757;
+    font-weight: 500;
+}
+
+/* レスポンシブ部分ここから */
+/* タブレット部分ここから */
+@media screen and (max-width: 896px) {
+    body {
+        width: 100%;
+    }
+   /* ヘッダー部分ここから */
+
+   header {
+    width: 100%;
+    position: relative;
+}
+
+header a {
+    position: absolute;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 65px;
+}
+
+/* メイン部分ここから */
+/* キービュアー部分ここから */
+.top {
+    position: relative;
+    padding-top: 0%;
+    margin-top: 0px;
+    width: 90vw;
+    height: 58vh;
+    min-height: 58vh !important;
+    margin-left: 10vw;
+    background-size: cover;
+}
+
+.top-image {
+    height: 100%;
+    height: 100%;
+    min-height: 100% !important;
+    background-size: cover;
+}
+
+.top-title,
+.top-text {
+    position: static;
+}
+
+.top .pc {
+    display: none;
+}
+
+.top .sp {
+    display: block;
+}
+
+.top-title {
+    margin-top: 20px;
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+.top-title img {
+    width: 100%;
+}
+
+.top-text {
+    width: 55%;
+    max-width: 230px;
+}
+
+.scroll {
+    position: relative;
+    right: -85%;
+    bottom: 140px;
+}
+
+.scroll p {
+    transform: rotate(90deg) scale(0.7);
+    color: #b0afaf;
+    font-size: 8px;
+    letter-spacing: 0.5ex;
+    z-index: 50;
+}
+
+.scroll-line {
+    background: #b0afaf;
+}
+
+.scroll-line::before,
+.scroll-line::after {
+    background: #b0afaf;
+}
+
+/* コンセプト部分ここから */
+.concept {
+    margin-top: 370px;
+    position: relative;
+    max-height: none;
+}
+
+.concept-photo {
+    position: absolute;
+    right: 30%;
+    top: 0;
+    width: 80%;
+    height: 60%;
+    max-height: 300px;
+    background: url(../images/concept_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20%;
+    z-index: -1;
+}
+
+.concept-text {
+    background: #ffffff;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 0;
+    margin-top: 200px;
+    padding: 35px 4%;
+    z-index: 3;
+}
+
+.concept-heading {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.concept-title {
+    width: 75%;
+    max-width: 350px;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.concept-message {
+    font-size: 12.5px;
+    line-height: 1.9;
+    margin-top: 25px
+}
+
+.concept-message .sp {
+    display: block;
+}
+
+.gray-box {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: #eeeeee;
+    z-index: -2;
+}
+
+/* サマリ部分ここから */
+.summary {
+    background: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.summary-content {
+    display: block;
+    margin-top: 0!important;
+    padding: 0 5%;
+    display: block;
+    text-align: center;
+    margin: 15% auto;
+}
+
+.summary-title,
+.summary-text {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.summary-title img {
+    width: 80%;
+    margin: 30px auto 13px;
+    padding-right: 3%;
+}
+
+.summary-text h2 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.summary-text p {
+    line-height: 2;
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+}
+
+/* 染め方部分ここから */
+.dyeing,
+.cutting,
+.sewing {
+    margin-top: 0;
+    display: block;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 90%;
+}
+
+.photo img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
+.content {
+    position: relative;
+    width: 80%;
+    margin: 13% 0 0 10% !important;
+    padding: 0;
+    max-width: 300px;
+}
+
+.content .title {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.content .title h2 {
+    width: auto;
+    height: 45px;
+}
+
+.content .title h2 img {
+    height: 100%;
+    width: auto;
+}
+
+.content .title .title-icon {
+    width: 60px;
+    height: auto;
+    margin-top: -8px;
+}
+
+.content .text h3 {
+    font-size: 1rem;
+    margin: 0 0 30px;
+    letter-spacing: normal;
+}
+
+.content .text p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 2.1em;
+    letter-spacing: -1px;
+}
+
+/* 裁断部分ここから */
+.cutting {
+    margin-top: 180px;
+}
+
+.cutting .photo {
+    margin-left: 10%;
+}
+
+/* 縫製部分ここから */
+
+.sewing {
+    margin-top: 160px;
+}
+
+
+/* デザイン部分ここから */
+
+.design-container {
+    display: block;
+}
+
+.design-view {
+    position: relative;
+    height: 290px;
+    width: 80%;
+    overflow: inherit;
+    right: -20%;
+}
+
+.design-view img {
+    width: auto;
+    height: 300px;
+    top: 5%;
+    right: 5%;
+}
+
+.design .content {
+    position: relative;
+    width: 80%;
+    margin: 13% 0 0 10% !important;
+    padding: 0;
+    max-width: 300px;
+    left: 0;
+}
+
+.design .content .text h3 {
+    font-size: 0.9rem;
+}
+
+.design-images {
+    display: block;
+}
+
+.design-image1,
+.design-image2 {
+    width: 100%;
+    margin: 0;
+}
+
+.design-images .design-photo {
+    width:100%;
+}
+
+.design-text {
+    margin-left: 10%;
+}
+
+.design-text h3 {
+    font-size: 1rem;
+    margin-top: 40px;
+    line-height: 1.7;
+}
+
+.design-text p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.design-image2 {
+    padding-top: 80px;
+    margin: 0 0 0 auto;
+}
+
+.design-image2 .design-text {
+    margin: 0;
+    width: 85%;
+}
+
+}
+
+
+/* スマホ部分ここから */
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    /* ヘッダー部分ここから */
+
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    header a {
+        position: absolute;
+        /* position: fixed; */
+        top: 0;
+        right: 0;
+        width: 65px;
+        height: 65px;
+    }
+
+    /* メイン部分ここから */
+    /* キービュアー部分ここから */
+    .top {
+        position: relative;
+        padding-top: 0%;
+        margin-top: 0px;
+        width: 90vw;
+        height: 58vh;
+        min-height: 58vh !important;
+        margin-left: 10vw;
+        background-size: cover;
+    }
+
+    .top-image {
+        height: 100%;
+        height: 100%;
+        min-height: 100% !important;
+        background-size: cover;
+    }
+
+    .top-title,
+    .top-text {
+        position: static;
+    }
+
+    .top .pc {
+        display: none;
+    }
+
+    .top .sp {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .top-title {
+        margin-top: 20px;
+        width: 50%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .top-title img {
+        width: 100%;
+    }
+
+    .top-text {
+        width: 55%;
+        max-width: 230px;
+    }
+
+    .scroll {
+        position: relative;
+        right: -85%;
+        bottom: 140px;
+    }
+
+    .scroll p {
+        transform: rotate(90deg) scale(0.7);
+        color: #b0afaf;
+        font-size: 8px;
+        letter-spacing: 0.5ex;
+        z-index: 50;
+    }
+
+    .scroll-line {
+        background: #b0afaf;
+    }
+
+    .scroll-line::before,
+    .scroll-line::after {
+        background: #b0afaf;
+    }
+
+    /* コンセプト部分ここから */
+    .concept {
+        margin-top: 370px;
+        position: relative;
+        max-height: none;
+        padding: 0;
+    }
+
+    .concept-photo {
+        position: absolute;
+        right: 30%;
+        width: 80%;
+        top: 0;
+        height: 60%;
+        max-height: 300px;
+        background: url(../images/concept_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20%;
+        z-index: -1;
+    }
+
+    .concept-text {
+        background: #ffffff;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 0;
+        margin-top: 200px;
+        padding: 35px 4%;
+        z-index: 3;
+    }
+
+    .concept-heading {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .concept-title {
+        width: 75%;
+        max-width: 350px;
+        height: auto;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .concept-message {
+        font-size: 12.5px;
+        line-height: 1.9;
+        margin-top: 25px
+    }
+
+    .concept-message .sp {
+        display: block;
+    }
+
+    .gray-box {
+        display: block;
+        /* position: absolute; */
+        /* top: 10%; */
+        /* left: 0; */
+        width: 100%;
+        height: 95%;
+        background: #eeeeee;
+        z-index: -2;
+    }
+
+    /* サマリ部分ここから */
+    .summary {
+        background: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .summary-content {
+        display: block;
+        margin-top: 10%;
+        padding: 0 5%;
+        display: block;
+        text-align: center;
+        margin: 15% auto;
+    }
+
+    .summary-title,
+    .summary-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .summary-title img {
+        width: 80%;
+        margin: 30px auto 13px;
+        padding-right: 3%;
+    }
+
+    .summary-text h2 {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .summary-text p {
+        line-height: 2;
+        margin-bottom: 1em;
+        font-size: 0.8rem;
+    }
+
+    /* 染め方部分ここから */
+    .dyeing,
+    .cutting,
+    .sewing {
+        margin-top: 0;
+        display: block;
+    }
+
+    .photo {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        width: 90%;
+    }
+
+    .photo img {
+        position: absolute;
+        width: auto;
+        height: 300px;
+    }
+
+    .dyeing .photo img {
+        right: -20%;
+    }
+
+    .content {
+        position: relative;
+        width: 80%;
+        margin: 13% 0 0 10% !important;
+        padding: 0;
+        max-width: 300px;
+    }
+
+    .content .title {
+        border-bottom: none;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+    }
+
+    .content .title h2 {
+        width: auto;
+        height: 45px;
+    }
+
+    .content .title h2 img {
+        height: 100%;
+        width: auto;
+    }
+
+    .content .title .title-icon {
+        width: 60px;
+        height: auto;
+        margin-top: -8px;
+    }
+
+    .content .text h3 {
+        font-size: 1rem;
+        margin: 0 0 30px;
+        letter-spacing: normal;
+    }
+
+    .content .text p {
+        font-size: 14px;
+        margin: 0;
+        line-height: 2.1em;
+        letter-spacing: -1px;
+    }
+
+    /* 裁断部分ここから */
+    .cutting {
+        margin-top: 180px;
+    }
+
+    .cutting .photo {
+        margin-left: 10%;
+    }
+
+    /* 縫製部分ここから */
+
+    .sewing {
+        margin-top: 160px;
+    }
+
+    .sewing .photo img {
+        right: -20%;
+    }
+
+    /* デザイン部分ここから */
+
+    .design-container {
+        display: block;
+    }
+
+    .design-view {
+        position: relative;
+        height: 290px;
+        width: 80%;
+        overflow: inherit;
+        right: -20%;
+    }
+
+    .design-view img {
+        width: auto;
+        height: 300px;
+        top: 5%;
+        right: 5%;
+    }
+
+    .design .content {
+        position: relative;
+        width: 80%;
+        margin: 13% 0 0 10% !important;
+        padding: 0;
+        max-width: 300px;
+    }
+
+    .design .content .text h3 {
+        font-size: 0.9rem;
+    }
+
+    .design-images {
+        display: block;
+    }
+
+    .design-image1,
+    .design-image2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .design-images .design-photo {
+        width: 75%;
+    }
+
+    .design-text {
+        width: 65%;
+        margin-left: 10%;
+    }
+
+    .design-text h3 {
+        font-size: 1rem;
+        margin-top: 40px;
+        line-height: 1.7;
+    }
+
+    .design-text p {
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 2;
+    }
+
+    .design-image2 {
+        padding-top: 80px;
+        margin-left: 25%;
+    }
+
+    .design-image2 .design-text {
+        margin: 0;
+    }
+
+    /* フッター部分ここから */
+    .footer-content h3 {
+        width: 90px;
+    }
+
+    .footer-content p {
+        width: 150px;
+    }
+
+    .footer-content a {
+        width: 70%;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1rem;
+    }
+
+    .footer-content a span {
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding: 40px 0 0;
+    }
+
+
+
+
+
+
+
+}
